@@ -1,8 +1,17 @@
 import React, { Component } from "react";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Container from "react-bootstrap/Container";
 
 class Home extends Component {
   render() {
-    return <div className="container">Home Page</div>;
+    return (
+      <Jumbotron fluid>
+        <Container>
+          <h1>Welcome to example site</h1>
+          <p>This is an example site built using ReactJS, Bootstrap.</p>
+        </Container>
+      </Jumbotron>
+    );
   }
 }
 
